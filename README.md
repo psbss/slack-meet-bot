@@ -3,7 +3,7 @@ This is solution to use `/meet` command from your Slack.
 
 ## Setup
 ### 1. Clone this repository.
-```bash
+```
 git clone git@github.com:psbss/slack-meet-bot.git
 
 // or if using GitHub CLI
@@ -11,7 +11,7 @@ gh repo clone psbss/slack-meet-bot
 ```
 
 ### 2. Install npm packages.
-```bash
+```
 npm install
 
 // or if using yarn
@@ -23,11 +23,11 @@ yarn add
 Open link and enable GAS API. https://script.google.com/home/usersettings
 
 Then, push script to GAS.
-```bash
-npx clasp login // Login and Authority your Google account
-npx clasp create --title "slack-meet-bot" --type webapp  --rootDir ./src
+```
+npx clasp login
+npx clasp create --title "slack-meet-bot" --type webapp --rootDir ./src
 npx clasp push
-npx clasp open // Open brower to add some secret key infomation
+npx clasp open
 ```
 
 Set secret key infomation in your browser.
@@ -37,7 +37,7 @@ Set secret key infomation in your browser.
 > Notice: If you have already created your Slack App, You can add new feature for your Slack App. 
 
 2. Copy `Bot User OAuth Token` from `OAuth Tokens for Your Workspace`.
-3. Paste code for `BOT_USER_OAUTH_TOKEN` in editor.
+3. Paste code for `BOT_USER_OAUTH_TOKEN` in editor (Line: 1).
 
 ### 4. Deploy GAS.
 In App script editor
@@ -47,6 +47,7 @@ In App script editor
 4. Execute by `Me`
 5. Access user `Everyone`
 6. Ship your code `Deploy`
+> If show `This app isn't verified.` page, click `Go to foobar (unsafe)`.
 7. Copy exec URL
 
 ### 5. Setup your Slack Bot.
