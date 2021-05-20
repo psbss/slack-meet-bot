@@ -129,3 +129,6 @@ tmp/
 temp/
 
 # End of https://www.toptal.com/developers/gitignore/api/node
+
+# add secret info file
+.clasp.json
